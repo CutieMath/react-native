@@ -42,10 +42,22 @@ const NFTCard = ({ data }) => {
       >
         <NFTTitle
           title={data.name}
-          subtitle={data.creater}
+          subtitle={data.creator}
           titleSize={SIZES.large}
           subtitleSize={SIZES.small}
         />
+
+        <View
+          style={{
+            marginTop: SIZES.font,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <EthPrice price={data.price} />
+          <RectButton />
+        </View>
       </View>
     </View>
   );
