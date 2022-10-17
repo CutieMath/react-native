@@ -1,10 +1,27 @@
 import { View, Text, Image } from "react-native";
 import { SIZES, FONTS, COLORS, SHADOWS, assets } from "../constants";
 
-export const NFTTitle = () => {
+export const NFTTitle = ({ title, subtitle, titleSize, subtitleSize }) => {
   return (
     <View>
-      <Text>SubInfo</Text>
+      <Text
+        style={{
+          fontFamily: FONTS.semiBold,
+          fontSize: titleSize,
+          color: COLORS.primary,
+        }}
+      >
+        {title}
+      </Text>
+      <Text
+        style={{
+          fontFamily: FONTS.regular,
+          fontSize: subtitleSize,
+          color: COLORS.primary,
+        }}
+      >
+        {subtitle}
+      </Text>
     </View>
   );
 };
@@ -25,6 +42,7 @@ export const ImageCmp = ({ imgUrl, index }) => {
       style={{
         width: 48,
         height: 48,
+        borderRadius: 100,
         marginLeft: index === 0 ? 0 : -SIZES.font,
       }}
     />
@@ -38,7 +56,7 @@ export const People = () => {
         flexDirection: "row",
       }}
     >
-      {[assets.daddy01, assets.daddy02, assets.daddy03].map((imgUrl, index) => (
+      {[assets.avatar1, assets.avatar2, assets.avatar3].map((imgUrl, index) => (
         <ImageCmp imgUrl={imgUrl} index={index} key={index} />
       ))}
     </View>

@@ -5,7 +5,7 @@ import left from "../assets/icons/left.png";
 import search from "../assets/icons/search.png";
 
 import logo from "../assets/images/logo.png";
-import nft01 from "../assets/images/nft01.png";
+import nft01 from "../assets/images/nft01.jpg";
 import nft02 from "../assets/images/nft02.jpeg";
 import nft03 from "../assets/images/nft03.jpeg";
 import nft04 from "../assets/images/nft04.jpeg";
@@ -13,9 +13,9 @@ import nft05 from "../assets/images/nft05.jpeg";
 import nft06 from "../assets/images/nft06.jpeg";
 import nft07 from "../assets/images/nft07.jpeg";
 
-import daddy01 from "../assets/images/daddy01.png";
-import daddy02 from "../assets/images/daddy02.png";
-import daddy03 from "../assets/images/daddy03.png";
+import avatar1 from "../assets/images/avatar1.jpg";
+import avatar2 from "../assets/images/avatar2.jpg";
+import avatar3 from "../assets/images/avatar3.png";
 
 export default {
   badge,
@@ -33,7 +33,7 @@ export default {
   nft06,
   nft07,
 
-  daddy01,
-  daddy02,
-  daddy03,
+  avatar1,
+  avatar2,
+  avatar3,
 };
