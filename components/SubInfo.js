@@ -17,7 +17,7 @@ export const EthPrice = () => {
   );
 };
 
-export const ImageCmp = (imgUrl, index) => {
+export const ImageCmp = ({ imgUrl, index }) => {
   return (
     <Image
       source={imgUrl}
@@ -47,8 +47,36 @@ export const People = () => {
 
 export const EndDate = () => {
   return (
-    <View>
-      <Text>EndDate</Text>
+    <View
+      style={{
+        paddingHorizontal: SIZES.font,
+        paddingVertical: SIZES.base,
+        backgroundColor: COLORS.white,
+        justifyContent: "center",
+        alignItems: "center",
+        elevation: 1,
+        maxWidth: "50%",
+        ...SHADOWS.light,
+      }}
+    >
+      <Text
+        style={{
+          fontFamily: FONTS.regular,
+          fontSize: SIZES.small,
+          color: COLORS.primary,
+        }}
+      >
+        Ending in
+      </Text>
+      <Text
+        style={{
+          fontFamily: FONTS.semiBold,
+          fontSize: SIZES.medium,
+          color: COLORS.primary,
+        }}
+      >
+        12h 30min
+      </Text>
     </View>
   );
 };
