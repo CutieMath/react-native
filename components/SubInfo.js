@@ -87,6 +87,8 @@ export const EndDate = () => {
         paddingHorizontal: SIZES.font,
         paddingVertical: SIZES.base,
         backgroundColor: COLORS.white,
+        borderRadius: SIZES.extraLarge,
+        opacity: 0.8,
         justifyContent: "center",
         alignItems: "center",
         elevation: 1,
